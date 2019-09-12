@@ -12,3 +12,6 @@ jobs:
         path: LICENSE
         content-type: text/plain
         repo-token: ${{ secrets.GITHUB_TOKEN }}
+        release_id: x.x.x
+        release-repo: lucyio/upload-to-release
+        action: unpublished

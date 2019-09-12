@@ -1,6 +1,6 @@
 name: 'Upload to Release Action'
 description: 'A GitHub Action that uploads a file to a new release.'
-author: 'Shopify'
+author: 'johnjjung'
 inputs:
   name:
     description: 'Artifact name'
@@ -15,6 +15,15 @@ inputs:
   repo-token:
     description: 'secrets.GITHUB_TOKEN'
     required: true
+  release_id:
+    description: 'Release Version ID'
+    required: true
+  release-repo:
+    description: 'username/repo-name'
+  action:
+    description: 'enum of published, unpublished, etc..'
+  name:
+    description: ''
 runs:
   using: 'node12'
   main: 'lib/main.js'

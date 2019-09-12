@@ -20,10 +20,6 @@ inputs:
     required: true
   release-repo:
     description: 'username/repo-name'
-  release_name:
-    description: 'Release Name'
-    required: false
-    default: 'Draft Release'
   action:
     description: 'enum of published, unpublished, etc..'
 runs:

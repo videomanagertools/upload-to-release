@@ -22,8 +22,6 @@ inputs:
     description: 'username/repo-name'
   action:
     description: 'enum of published, unpublished, etc..'
-  name:
-    description: ''
 runs:
   using: 'node12'
   main: 'lib/main.js'

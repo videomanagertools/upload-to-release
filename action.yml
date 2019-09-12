@@ -3,10 +3,10 @@ description: 'A GitHub Action that uploads a file to a new release.'
 author: 'johnjjung'
 inputs:
   name:
-    description: 'Artifact name'
+    description: 'Repo username/repo-name'
     required: true
   path:
-    description: 'Path to the file to upload'
+    description: 'Path to the flat directory'
     required: true
   content-type:
     description: 'Content type for the file'
@@ -18,6 +18,8 @@ inputs:
   release_id:
     description: 'Release Version ID'
     required: true
+  release_name:
+    description: 'Release Name, or use GITHUB_SHA'
   release-repo:
     description: 'username/repo-name'
   action:
